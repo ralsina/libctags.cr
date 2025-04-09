@@ -1,6 +1,8 @@
-# TODO: Write documentation for `Libctags`
-module Libctags
-  VERSION = "0.1.0"
+@[Link(ldflags: "-L#{__DIR__}/../ext/")]
+@[Link(ldflags: "#{__DIR__}/../ext/libctags.a")]
 
-  # TODO: Put your code here
+lib libctags
+end
+
+module Ctags
 end
