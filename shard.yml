@@ -1,0 +1,13 @@
+name: libctags
+version: 0.1.0
+
+authors:
+  - Roberto Alsina <roberto.alsina@gmail.com>
+
+targets:
+  libctags:
+    main: src/libctags.cr
+
+crystal: '>= 1.15.1'
+
+license: MIT
