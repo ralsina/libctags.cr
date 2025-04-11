@@ -90,6 +90,12 @@ end
 module Ctags
   VERSION = {{ `shards version #{__DIR__}`.chomp.stringify }}
 
+  # Options for tagsFind() and tagsFindPseudoTag()
+  TAG_FULLMATCH    = 0x0
+  TAG_PARTIALMATCH = 0x1
+  TAG_OBSERVECASE  = 0x0
+  TAG_IGNORECASE   = 0x2
+
   class File
     def initialize(file_path : String)
       @info = LibCtags::TagFileInfo.new
