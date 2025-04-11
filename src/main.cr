@@ -5,8 +5,10 @@ require "./libctags"
 HELP = <<-DOCOPT
 readtags: search for one or more tags in a ctags file
 
+If FILE is not specified it defaults to "tags"
+
 Usage:
-    readtags [-i][-n] <FILE> <NAME>...
+    readtags [-i][-n] [FILE] <NAME>...
     readtags --version
     readtags --help
 
@@ -24,3 +26,10 @@ if options["--version"]
   puts "readtags #{Ctags::VERSION}"
   exit 0
 end
+
+# Handle help manually
+if options["--help"]
+    puts HELP
+    exit 0
+  end
+  
