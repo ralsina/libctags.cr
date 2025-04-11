@@ -1,22 +1,29 @@
 # libctags
 
-TODO: Write a description here
+This is a partial wrapper of [universal-ctags](https://docs.ctags.io/) code to 
+*read* ctags files. It is not a complete wrapper, and it is not intended to be. 
+It only covers the bits I want for my own projects, but if someone else uses it
+it's easy to add the missing pieces.
 
-## Installation
+It includes a very basic "readtags" program as an example of how to use it.
 
-TODO: Write installation instructions here
 
 ## Usage
 
-TODO: Write usage instructions here
+1. Add the dependency to your `shard.yml`
 
-## Development
+```yaml
+dependencies:
+  cr-discount:
+    github: ralsina/cr-discount
+```
 
-TODO: Write development instructions here
+2. Run `shards install`
+
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/libctags/fork>)
+1. Fork it (<https://github.com/ralsina/libctags/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -24,4 +31,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [Roberto Alsina](https://github.com/your-github-user) - creator and maintainer
+- [Roberto Alsina](https://github.com/ralsina) - creator and maintainer
