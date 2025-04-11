@@ -1,0 +1,16 @@
+*   Copyright (c) 1996-2003, Darren Hiebert
+*
+*   This source code is released for the public domain.
+*
+*   This file defines the public interface for looking up tag entries in tag
+*   files.
+*
+*   The functions defined in this interface are intended to provide tag file
+*   support to a software tool. The tag lookups provided are sufficiently fast
+*   enough to permit opening a sorted tag file, searching for a matching tag,
+*   then closing the tag file each time a tag is looked up (search times are
+*   on the order of hundredths of a second, even for huge tag files). This is
+*   the recommended use of this library for most tool applications. Adhering
+*   to this approach permits a user to regenerate a tag file at will without
+*   the tool needing to detect and resynchronize with changes to the tag file.
+*   Even for an unsorted 24MB tag file, tag searches take about one second.
