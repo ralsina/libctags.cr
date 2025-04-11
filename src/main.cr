@@ -4,7 +4,9 @@ require "./libctags"
 # Define the usage pattern for docopt
 HELP = <<-DOCOPT
 Usage:
-    readtags [options]
+    readtags [-i][-n] <FILE> <NAME>...
+    readtags --version
+    readtags --help
 
 Options:
     -h --help     Show this screen.
