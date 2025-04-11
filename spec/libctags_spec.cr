@@ -1,9 +1,8 @@
 require "./spec_helper"
 
-describe Libctags do
-  # TODO: Write tests
-
-  it "works" do
-    false.should eq(true)
+describe Ctags do
+  it "has a version number" do
+    Ctags::VERSION.should_not be_nil
   end
+
 end
