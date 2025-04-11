@@ -40,6 +40,7 @@ describe Ctags do
       entry = file.find_entry("tagsOpen")
       entry.should_not be_nil
       entry.as(Ctags::Entry).name.should eq("tagsOpen")
+      entry.as(Ctags::Entry).line_number.should eq(1290)
       file.close
     end
   end
