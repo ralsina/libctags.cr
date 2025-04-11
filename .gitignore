@@ -3,3 +3,7 @@
 /bin/
 /.shards/
 *.dwarf
+ext/libreadtags.a
+ext/readtags.h.gch
+ext/readtags.o
+shard.lock

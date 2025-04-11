@@ -4,6 +4,14 @@ version: 0.1.0
 authors:
   - Roberto Alsina <roberto.alsina@gmail.com>
 
+targets:
+  readtags:
+    main: src/main.cr
+
+dependencies:
+  docopt:
+    github: chenkovsky/docopt.cr
+
 scripts:
     postinstall: cd ext && make
 
