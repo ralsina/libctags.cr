@@ -1,6 +1,6 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
-!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_EXCMD	number	/number, pattern, mixed, or combineV2/
 !_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
@@ -9,151 +9,151 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	//
-EmptyString	ext/readtags.c	/^static const char *const EmptyString = "";$/;"	v	typeref:typename:const char * const	file:
-JUMP_BACK	ext/readtags.c	/^#define JUMP_BACK /;"	d	file:
-PseudoTagPrefix	ext/readtags.c	/^static const char *const PseudoTagPrefix = "!_";$/;"	v	typeref:typename:const char * const	file:
-PseudoTagPrefixLength	ext/readtags.c	/^static const size_t PseudoTagPrefixLength = 2;$/;"	v	typeref:typename:const size_t	file:
-READTAGS_H	ext/readtags.h	/^#define READTAGS_H$/;"	d
-READTAGS_INLINE	ext/readtags.c	/^#define READTAGS_INLINE /;"	d	file:
-TAB	ext/readtags.c	/^#define TAB /;"	d	file:
-TAG_FOLDSORTED	ext/readtags.h	/^	TAG_UNSORTED, TAG_SORTED, TAG_FOLDSORTED$/;"	e	enum:__anonb9bf78c60103
-TAG_FULLMATCH	ext/readtags.h	/^#define TAG_FULLMATCH /;"	d
-TAG_IGNORECASE	ext/readtags.h	/^#define TAG_IGNORECASE /;"	d
-TAG_OBSERVECASE	ext/readtags.h	/^#define TAG_OBSERVECASE /;"	d
-TAG_PARTIALMATCH	ext/readtags.h	/^#define TAG_PARTIALMATCH /;"	d
-TAG_SORTED	ext/readtags.h	/^	TAG_UNSORTED, TAG_SORTED, TAG_FOLDSORTED$/;"	e	enum:__anonb9bf78c60103
-TAG_UNSORTED	ext/readtags.h	/^	TAG_UNSORTED, TAG_SORTED, TAG_FOLDSORTED$/;"	e	enum:__anonb9bf78c60103
-TagErrnoFileMaybeTooBig	ext/readtags.h	/^	TagErrnoFileMaybeTooBig        = -5, \/* Maybe the tags file is too big *\/$/;"	e	enum:__anonb9bf78c60303
-TagErrnoInvalidArgument	ext/readtags.h	/^	TagErrnoInvalidArgument        = -4, \/* Unexpected argument passed to the API$/;"	e	enum:__anonb9bf78c60303
-TagErrnoUnexpectedFormat	ext/readtags.h	/^	TagErrnoUnexpectedFormat       = -2, \/* Unexpected format number *\/$/;"	e	enum:__anonb9bf78c60303
-TagErrnoUnexpectedLineno	ext/readtags.h	/^	TagErrnoUnexpectedLineno       = -3, \/* Unexpected value for line: field$/;"	e	enum:__anonb9bf78c60303
-TagErrnoUnexpectedSortedMethod	ext/readtags.h	/^	TagErrnoUnexpectedSortedMethod = -1, \/* Unexpected sorted method *\/$/;"	e	enum:__anonb9bf78c60303
-TagFailure	ext/readtags.h	/^typedef enum { TagFailure = 0, TagSuccess = 1 } tagResult;$/;"	e	enum:__anonb9bf78c60203
-TagSuccess	ext/readtags.h	/^typedef enum { TagFailure = 0, TagSuccess = 1 } tagResult;$/;"	e	enum:__anonb9bf78c60203
-__anonb9bf78c10108	ext/readtags.c	/^typedef struct {$/;"	s	file:
-__anonb9bf78c10208	ext/readtags.c	/^	struct {$/;"	s	struct:sTagFile	file:
-__anonb9bf78c10308	ext/readtags.c	/^	struct {$/;"	s	struct:sTagFile	file:
-__anonb9bf78c10408	ext/readtags.c	/^	struct {$/;"	s	struct:sTagFile	file:
-__anonb9bf78c60103	ext/readtags.h	/^typedef enum {$/;"	g
-__anonb9bf78c60203	ext/readtags.h	/^typedef enum { TagFailure = 0, TagSuccess = 1 } tagResult;$/;"	g
-__anonb9bf78c60303	ext/readtags.h	/^typedef enum {$/;"	g
-__anonb9bf78c60408	ext/readtags.h	/^typedef struct {$/;"	s
-__anonb9bf78c60508	ext/readtags.h	/^	struct {$/;"	s	struct:__anonb9bf78c60408
-__anonb9bf78c60608	ext/readtags.h	/^	struct {$/;"	s	struct:__anonb9bf78c60408
-__anonb9bf78c60708	ext/readtags.h	/^	struct {$/;"	s	struct:__anonb9bf78c60408
-__anonb9bf78c60808	ext/readtags.h	/^typedef struct {$/;"	s
-__anonb9bf78c60908	ext/readtags.h	/^typedef struct {$/;"	s
-__anonb9bf78c60a08	ext/readtags.h	/^	struct {$/;"	s	struct:__anonb9bf78c60908
-__anonb9bf78c60b08	ext/readtags.h	/^	struct {$/;"	s	struct:__anonb9bf78c60908
-address	ext/readtags.h	/^	} address;$/;"	m	struct:__anonb9bf78c60908	typeref:struct:__anonb9bf78c60908::__anonb9bf78c60a08
-author	ext/readtags.c	/^		char *author;$/;"	m	struct:sTagFile::__anonb9bf78c10408	typeref:typename:char *	file:
-author	ext/readtags.h	/^		const char *author;$/;"	m	struct:__anonb9bf78c60408::__anonb9bf78c60708	typeref:typename:const char *
-buffer	ext/readtags.c	/^	char *buffer;$/;"	m	struct:__anonb9bf78c10108	typeref:typename:char *	file:
-copyName	ext/readtags.c	/^static tagResult copyName (tagFile *const file)$/;"	f	typeref:typename:tagResult	file:
-count	ext/readtags.h	/^		unsigned short count;$/;"	m	struct:__anonb9bf78c60908::__anonb9bf78c60b08	typeref:typename:unsigned short
-countContinuousBackslashesBackward	ext/readtags.c	/^static unsigned int countContinuousBackslashesBackward(const char *from,$/;"	f	typeref:typename:unsigned int	file:
-doesFilePointPseudoTag	ext/readtags.c	/^static int doesFilePointPseudoTag (tagFile *const file, void *unused)$/;"	f	typeref:typename:int	file:
-duplicate	ext/readtags.c	/^static char *duplicate (const char *str)$/;"	f	typeref:typename:char *	file:
-err	ext/readtags.c	/^	int err;$/;"	m	struct:sTagFile	typeref:typename:int	file:
-error_number	ext/readtags.h	/^		int error_number;$/;"	m	struct:__anonb9bf78c60408::__anonb9bf78c60508	typeref:typename:int
-fields	ext/readtags.c	/^	} fields;$/;"	m	struct:sTagFile	typeref:struct:sTagFile::__anonb9bf78c10308	file:
-fields	ext/readtags.h	/^	} fields;$/;"	m	struct:__anonb9bf78c60908	typeref:struct:__anonb9bf78c60908::__anonb9bf78c60b08
-file	ext/readtags.h	/^	const char *file;$/;"	m	struct:__anonb9bf78c60908	typeref:typename:const char *
-file	ext/readtags.h	/^	} file;$/;"	m	struct:__anonb9bf78c60408	typeref:struct:__anonb9bf78c60408::__anonb9bf78c60608
-fileScope	ext/readtags.h	/^	short fileScope;$/;"	m	struct:__anonb9bf78c60908	typeref:typename:short
-find	ext/readtags.c	/^static tagResult find (tagFile *const file, tagEntry *const entry,$/;"	f	typeref:typename:tagResult	file:
-findBinary	ext/readtags.c	/^static tagResult findBinary (tagFile *const file)$/;"	f	typeref:typename:tagResult	file:
-findFirstMatchBefore	ext/readtags.c	/^static tagResult findFirstMatchBefore (tagFile *const file)$/;"	f	typeref:typename:tagResult	file:
-findFirstNonMatchBefore	ext/readtags.c	/^static tagResult findFirstNonMatchBefore (tagFile *const file)$/;"	f	typeref:typename:tagResult	file:
-findNext	ext/readtags.c	/^static tagResult findNext (tagFile *const file, tagEntry *const entry)$/;"	f	typeref:typename:tagResult	file:
-findNextFull	ext/readtags.c	/^static tagResult findNextFull (tagFile *const file, tagEntry *const entry,$/;"	f	typeref:typename:tagResult	file:
-findPseudoTag	ext/readtags.c	/^static tagResult findPseudoTag (tagFile *const file, int rewindBeforeFinding, tagEntry *const en/;"	f	typeref:typename:tagResult	file:
-findSequential	ext/readtags.c	/^static tagResult findSequential (tagFile *const file)$/;"	f	typeref:typename:tagResult	file:
-findSequentialFull	ext/readtags.c	/^static tagResult findSequentialFull (tagFile *const file,$/;"	f	typeref:typename:tagResult	file:
-format	ext/readtags.c	/^	unsigned char format;$/;"	m	struct:sTagFile	typeref:typename:unsigned char	file:
-format	ext/readtags.h	/^			short format;$/;"	m	struct:__anonb9bf78c60408::__anonb9bf78c60608	typeref:typename:short
-fp	ext/readtags.c	/^	FILE* fp;$/;"	m	struct:sTagFile	typeref:typename:FILE *	file:
-gotoFirstLogicalTag	ext/readtags.c	/^static tagResult gotoFirstLogicalTag (tagFile *const file)$/;"	f	typeref:typename:tagResult	file:
-growFields	ext/readtags.c	/^static tagResult growFields (tagFile *const file)$/;"	f	typeref:typename:tagResult	file:
-growString	ext/readtags.c	/^static tagResult growString (vstring *s)$/;"	f	typeref:typename:tagResult	file:
-ignorecase	ext/readtags.c	/^			short ignorecase;$/;"	m	struct:sTagFile::__anonb9bf78c10208	typeref:typename:short	file:
-initialize	ext/readtags.c	/^static tagFile *initialize (const char *const filePath, tagFileInfo *const info)$/;"	f	typeref:typename:tagFile *	file:
-initialized	ext/readtags.c	/^	unsigned char initialized;$/;"	m	struct:sTagFile	typeref:typename:unsigned char	file:
-inputUCtagsMode	ext/readtags.c	/^	unsigned char inputUCtagsMode;$/;"	m	struct:sTagFile	typeref:typename:unsigned char	file:
-isOdd	ext/readtags.c	/^static int isOdd (unsigned int i)$/;"	f	typeref:typename:int	file:
-isPseudoTagLine	ext/readtags.c	/^static int isPseudoTagLine (const char *buffer)$/;"	f	typeref:typename:int	file:
-key	ext/readtags.h	/^	const char *key;$/;"	m	struct:__anonb9bf78c60808	typeref:typename:const char *
-kind	ext/readtags.h	/^	const char *kind;$/;"	m	struct:__anonb9bf78c60908	typeref:typename:const char *
-line	ext/readtags.c	/^	vstring line;$/;"	m	struct:sTagFile	typeref:typename:vstring	file:
-lineNumber	ext/readtags.h	/^		unsigned long lineNumber;$/;"	m	struct:__anonb9bf78c60908::__anonb9bf78c60a08	typeref:typename:unsigned long
-list	ext/readtags.c	/^			tagExtensionField *list;$/;"	m	struct:sTagFile::__anonb9bf78c10308	typeref:typename:tagExtensionField *	file:
-list	ext/readtags.h	/^		tagExtensionField *list;$/;"	m	struct:__anonb9bf78c60908::__anonb9bf78c60b08	typeref:typename:tagExtensionField *
-max	ext/readtags.c	/^			unsigned short max;$/;"	m	struct:sTagFile::__anonb9bf78c10308	typeref:typename:unsigned short	file:
-name	ext/readtags.c	/^			char *name;$/;"	m	struct:sTagFile::__anonb9bf78c10208	typeref:typename:char *	file:
-name	ext/readtags.c	/^		char *name;$/;"	m	struct:sTagFile::__anonb9bf78c10408	typeref:typename:char *	file:
-name	ext/readtags.c	/^	vstring name;$/;"	m	struct:sTagFile	typeref:typename:vstring	file:
-name	ext/readtags.h	/^		const char *name;$/;"	m	struct:__anonb9bf78c60408::__anonb9bf78c60708	typeref:typename:const char *
-name	ext/readtags.h	/^	const char *name;$/;"	m	struct:__anonb9bf78c60908	typeref:typename:const char *
-nameAcceptable	ext/readtags.c	/^static int nameAcceptable (tagFile *const file, void *unused)$/;"	f	typeref:typename:int	file:
-nameComparison	ext/readtags.c	/^static int nameComparison (tagFile *const file)$/;"	f	typeref:typename:int	file:
-nameLength	ext/readtags.c	/^			size_t nameLength;$/;"	m	struct:sTagFile::__anonb9bf78c10208	typeref:typename:size_t	file:
-opened	ext/readtags.h	/^		int opened;$/;"	m	struct:__anonb9bf78c60408::__anonb9bf78c60508	typeref:typename:int
-parseExtensionFields	ext/readtags.c	/^static tagResult parseExtensionFields (tagFile *const file, tagEntry *const entry,$/;"	f	typeref:typename:tagResult	file:
-parseTagLine	ext/readtags.c	/^static tagResult parseTagLine (tagFile *file, tagEntry *const entry, int *err)$/;"	f	typeref:typename:tagResult	file:
-partial	ext/readtags.c	/^			short partial;$/;"	m	struct:sTagFile::__anonb9bf78c10208	typeref:typename:short	file:
-pattern	ext/readtags.h	/^		const char *pattern;$/;"	m	struct:__anonb9bf78c60908::__anonb9bf78c60a08	typeref:typename:const char *
-pos	ext/readtags.c	/^			rt_off_t pos;$/;"	m	struct:sTagFile::__anonb9bf78c10208	typeref:typename:rt_off_t	file:
-pos	ext/readtags.c	/^	rt_off_t pos;$/;"	m	struct:sTagFile	typeref:typename:rt_off_t	file:
-program	ext/readtags.c	/^	} program;$/;"	m	struct:sTagFile	typeref:struct:sTagFile::__anonb9bf78c10408	file:
-program	ext/readtags.h	/^	} program;$/;"	m	struct:__anonb9bf78c60408	typeref:struct:__anonb9bf78c60408::__anonb9bf78c60708
-readFieldValue	ext/readtags.c	/^static const char *readFieldValue ($/;"	f	typeref:typename:const char *	file:
-readNext	ext/readtags.c	/^static tagResult readNext (tagFile *const file, tagEntry *const entry)$/;"	f	typeref:typename:tagResult	file:
-readPseudoTags	ext/readtags.c	/^static tagResult readPseudoTags (tagFile *const file, tagFileInfo *const info)$/;"	f	typeref:typename:tagResult	file:
-readTagCharacter	ext/readtags.c	/^int readTagCharacter (const char **const s)$/;"	f	typeref:typename:READTAGS_INLINE int
-readTagLine	ext/readtags.c	/^static int readTagLine (tagFile *const file, int *err)$/;"	f	typeref:typename:int	file:
-readTagLineRaw	ext/readtags.c	/^static int readTagLineRaw (tagFile *const file, int *err)$/;"	f	typeref:typename:int	file:
-readTagLineSeek	ext/readtags.c	/^static int readTagLineSeek (tagFile *const file, const rt_off_t pos)$/;"	f	typeref:typename:int	file:
-readtags_fseek	ext/readtags.c	/^static int readtags_fseek(FILE *fp, rt_off_t pos, int whence)$/;"	f	typeref:typename:int	file:
-readtags_ftell	ext/readtags.c	/^static rt_off_t readtags_ftell(FILE *fp)$/;"	f	typeref:typename:rt_off_t	file:
-rt_off_t	ext/readtags.c	/^typedef long long rt_off_t;$/;"	t	typeref:typename:long long	file:
-rt_off_t	ext/readtags.c	/^typedef off_t rt_off_t;$/;"	t	typeref:typename:off_t	file:
-sTagFile	ext/readtags.c	/^struct sTagFile {$/;"	s	file:
-search	ext/readtags.c	/^	} search;$/;"	m	struct:sTagFile	typeref:struct:sTagFile::__anonb9bf78c10208	file:
-size	ext/readtags.c	/^	rt_off_t size;$/;"	m	struct:sTagFile	typeref:typename:rt_off_t	file:
-size	ext/readtags.c	/^	size_t size;$/;"	m	struct:__anonb9bf78c10108	typeref:typename:size_t	file:
-sort	ext/readtags.h	/^			tagSortType sort;$/;"	m	struct:__anonb9bf78c60408::__anonb9bf78c60608	typeref:typename:tagSortType
-sortMethod	ext/readtags.c	/^	tagSortType sortMethod;$/;"	m	struct:sTagFile	typeref:typename:tagSortType	file:
-sortType	ext/readtags.h	/^#define sortType /;"	d
-status	ext/readtags.h	/^	} status;$/;"	m	struct:__anonb9bf78c60408	typeref:struct:__anonb9bf78c60408::__anonb9bf78c60508
-tagEntry	ext/readtags.h	/^} tagEntry;$/;"	t	typeref:struct:__anonb9bf78c60908
-tagErrno	ext/readtags.h	/^} tagErrno;$/;"	t	typeref:enum:__anonb9bf78c60303
-tagExtensionField	ext/readtags.h	/^} tagExtensionField;$/;"	t	typeref:struct:__anonb9bf78c60808
-tagFile	ext/readtags.h	/^typedef struct sTagFile tagFile;$/;"	t	typeref:struct:sTagFile
-tagFileInfo	ext/readtags.h	/^} tagFileInfo;$/;"	t	typeref:struct:__anonb9bf78c60408
-tagResult	ext/readtags.h	/^typedef enum { TagFailure = 0, TagSuccess = 1 } tagResult;$/;"	t	typeref:enum:__anonb9bf78c60203
-tagSortType	ext/readtags.h	/^} tagSortType ;$/;"	t	typeref:enum:__anonb9bf78c60103
-tagcmp	ext/readtags.c	/^static int tagcmp (const char *s1, const char *s2)$/;"	f	typeref:typename:int	file:
-tagncmp	ext/readtags.c	/^static int tagncmp (const char *s1, const char *s2, size_t n)$/;"	f	typeref:typename:int	file:
-tagnuppercmp	ext/readtags.c	/^static int tagnuppercmp (const char *s1, const char *s2, size_t n)$/;"	f	typeref:typename:int	file:
-tagsClose	ext/readtags.c	/^extern tagResult tagsClose (tagFile *const file)$/;"	f	typeref:typename:tagResult
-tagsField	ext/readtags.c	/^extern const char *tagsField (const tagEntry *const entry, const char *const key)$/;"	f	typeref:typename:const char *
-tagsFind	ext/readtags.c	/^extern tagResult tagsFind (tagFile *const file, tagEntry *const entry,$/;"	f	typeref:typename:tagResult
-tagsFindNext	ext/readtags.c	/^extern tagResult tagsFindNext (tagFile *const file, tagEntry *const entry)$/;"	f	typeref:typename:tagResult
-tagsFindPseudoTag	ext/readtags.c	/^extern tagResult tagsFindPseudoTag (tagFile *const file, tagEntry *const entry,$/;"	f	typeref:typename:tagResult
-tagsFirst	ext/readtags.c	/^extern tagResult tagsFirst (tagFile *const file, tagEntry *const entry)$/;"	f	typeref:typename:tagResult
-tagsFirstPseudoTag	ext/readtags.c	/^extern tagResult tagsFirstPseudoTag (tagFile *const file, tagEntry *const entry)$/;"	f	typeref:typename:tagResult
-tagsGetErrno	ext/readtags.c	/^extern int tagsGetErrno (tagFile *const file)$/;"	f	typeref:typename:int
-tagsNext	ext/readtags.c	/^extern tagResult tagsNext (tagFile *const file, tagEntry *const entry)$/;"	f	typeref:typename:tagResult
-tagsNextPseudoTag	ext/readtags.c	/^extern tagResult tagsNextPseudoTag (tagFile *const file, tagEntry *const entry)$/;"	f	typeref:typename:tagResult
-tagsOpen	ext/readtags.c	/^extern tagFile *tagsOpen (const char *const filePath, tagFileInfo *const info)$/;"	f	typeref:typename:tagFile *
-tagsSetSortType	ext/readtags.c	/^extern tagResult tagsSetSortType (tagFile *const file, const tagSortType type)$/;"	f	typeref:typename:tagResult
-taguppercmp	ext/readtags.c	/^static int taguppercmp (const char *s1, const char *s2)$/;"	f	typeref:typename:int	file:
-terminate	ext/readtags.c	/^static void terminate (tagFile *const file)$/;"	f	typeref:typename:void	file:
-unescapeInPlace	ext/readtags.c	/^static char *unescapeInPlace (char *q, char **tab, size_t *p_len)$/;"	f	typeref:typename:char *	file:
-url	ext/readtags.c	/^		char *url;$/;"	m	struct:sTagFile::__anonb9bf78c10408	typeref:typename:char *	file:
-url	ext/readtags.h	/^		const char *url;$/;"	m	struct:__anonb9bf78c60408::__anonb9bf78c60708	typeref:typename:const char *
-value	ext/readtags.h	/^	const char *value;$/;"	m	struct:__anonb9bf78c60808	typeref:typename:const char *
-version	ext/readtags.c	/^		char *version;$/;"	m	struct:sTagFile::__anonb9bf78c10408	typeref:typename:char *	file:
-version	ext/readtags.h	/^		const char *version;$/;"	m	struct:__anonb9bf78c60408::__anonb9bf78c60708	typeref:typename:const char *
-vstring	ext/readtags.c	/^} vstring;$/;"	t	typeref:struct:__anonb9bf78c10108	file:
-xdigitValue	ext/readtags.c	/^static int xdigitValue (unsigned char digit)$/;"	f	typeref:typename:int	file:
+EmptyString	ext/readtags.c	112;"	v	typeref:typename:const char * const	file:
+JUMP_BACK	ext/readtags.c	1054;"	d	file:
+PseudoTagPrefix	ext/readtags.c	113;"	v	typeref:typename:const char * const	file:
+PseudoTagPrefixLength	ext/readtags.c	114;"	v	typeref:typename:const size_t	file:
+READTAGS_H	ext/readtags.h	20;"	d
+READTAGS_INLINE	ext/readtags.c	18;"	d	file:
+TAB	ext/readtags.c	33;"	d	file:
+TAG_FOLDSORTED	ext/readtags.h	32;"	e	enum:__anonb9bf78c60103
+TAG_FULLMATCH	ext/readtags.h	43;"	d
+TAG_IGNORECASE	ext/readtags.h	47;"	d
+TAG_OBSERVECASE	ext/readtags.h	46;"	d
+TAG_PARTIALMATCH	ext/readtags.h	44;"	d
+TAG_SORTED	ext/readtags.h	32;"	e	enum:__anonb9bf78c60103
+TAG_UNSORTED	ext/readtags.h	32;"	e	enum:__anonb9bf78c60103
+TagErrnoFileMaybeTooBig	ext/readtags.h	62;"	e	enum:__anonb9bf78c60303
+TagErrnoInvalidArgument	ext/readtags.h	60;"	e	enum:__anonb9bf78c60303
+TagErrnoUnexpectedFormat	ext/readtags.h	57;"	e	enum:__anonb9bf78c60303
+TagErrnoUnexpectedLineno	ext/readtags.h	58;"	e	enum:__anonb9bf78c60303
+TagErrnoUnexpectedSortedMethod	ext/readtags.h	56;"	e	enum:__anonb9bf78c60303
+TagFailure	ext/readtags.h	53;"	e	enum:__anonb9bf78c60203
+TagSuccess	ext/readtags.h	53;"	e	enum:__anonb9bf78c60203
+__anonb9bf78c10108	ext/readtags.c	39;"	s	file:
+__anonb9bf78c10208	ext/readtags.c	74;"	s	struct:sTagFile	file:
+__anonb9bf78c10308	ext/readtags.c	87;"	s	struct:sTagFile	file:
+__anonb9bf78c10408	ext/readtags.c	94;"	s	struct:sTagFile	file:
+__anonb9bf78c60103	ext/readtags.h	31;"	g
+__anonb9bf78c60203	ext/readtags.h	53;"	g
+__anonb9bf78c60303	ext/readtags.h	55;"	g
+__anonb9bf78c60408	ext/readtags.h	70;"	s
+__anonb9bf78c60508	ext/readtags.h	72;"	s	struct:__anonb9bf78c60408
+__anonb9bf78c60608	ext/readtags.h	82;"	s	struct:__anonb9bf78c60408
+__anonb9bf78c60708	ext/readtags.h	92;"	s	struct:__anonb9bf78c60408
+__anonb9bf78c60808	ext/readtags.h	111;"	s
+__anonb9bf78c60908	ext/readtags.h	122;"	s
+__anonb9bf78c60a08	ext/readtags.h	132;"	s	struct:__anonb9bf78c60908
+__anonb9bf78c60b08	ext/readtags.h	149;"	s	struct:__anonb9bf78c60908
+address	ext/readtags.h	140;"	m	struct:__anonb9bf78c60908	typeref:struct:__anonb9bf78c60908::__anonb9bf78c60a08
+author	ext/readtags.c	96;"	m	struct:sTagFile::__anonb9bf78c10408	typeref:typename:char *	file:
+author	ext/readtags.h	94;"	m	struct:__anonb9bf78c60408::__anonb9bf78c60708	typeref:typename:const char *
+buffer	ext/readtags.c	41;"	m	struct:__anonb9bf78c10108	typeref:typename:char *	file:
+copyName	ext/readtags.c	295;"	f	typeref:typename:tagResult	file:
+count	ext/readtags.h	151;"	m	struct:__anonb9bf78c60908::__anonb9bf78c60b08	typeref:typename:unsigned short
+countContinuousBackslashesBackward	ext/readtags.c	524;"	f	typeref:typename:unsigned int	file:
+doesFilePointPseudoTag	ext/readtags.c	827;"	f	typeref:typename:int	file:
+duplicate	ext/readtags.c	685;"	f	typeref:typename:char *	file:
+err	ext/readtags.c	106;"	m	struct:sTagFile	typeref:typename:int	file:
+error_number	ext/readtags.h	78;"	m	struct:__anonb9bf78c60408::__anonb9bf78c60508	typeref:typename:int
+fields	ext/readtags.c	92;"	m	struct:sTagFile	typeref:struct:sTagFile::__anonb9bf78c10308	file:
+fields	ext/readtags.h	155;"	m	struct:__anonb9bf78c60908	typeref:struct:__anonb9bf78c60908::__anonb9bf78c60b08
+file	ext/readtags.h	129;"	m	struct:__anonb9bf78c60908	typeref:typename:const char *
+file	ext/readtags.h	88;"	m	struct:__anonb9bf78c60408	typeref:struct:__anonb9bf78c60408::__anonb9bf78c60608
+fileScope	ext/readtags.h	146;"	m	struct:__anonb9bf78c60908	typeref:typename:short
+find	ext/readtags.c	1174;"	f	typeref:typename:tagResult	file:
+findBinary	ext/readtags.c	1091;"	f	typeref:typename:tagResult	file:
+findFirstMatchBefore	ext/readtags.c	1073;"	f	typeref:typename:tagResult	file:
+findFirstNonMatchBefore	ext/readtags.c	1052;"	f	typeref:typename:tagResult	file:
+findNext	ext/readtags.c	1252;"	f	typeref:typename:tagResult	file:
+findNextFull	ext/readtags.c	1231;"	f	typeref:typename:tagResult	file:
+findPseudoTag	ext/readtags.c	1260;"	f	typeref:typename:tagResult	file:
+findSequential	ext/readtags.c	1169;"	f	typeref:typename:tagResult	file:
+findSequentialFull	ext/readtags.c	1140;"	f	typeref:typename:tagResult	file:
+format	ext/readtags.c	56;"	m	struct:sTagFile	typeref:typename:unsigned char	file:
+format	ext/readtags.h	84;"	m	struct:__anonb9bf78c60408::__anonb9bf78c60608	typeref:typename:short
+fp	ext/readtags.c	64;"	m	struct:sTagFile	typeref:typename:FILE *	file:
+gotoFirstLogicalTag	ext/readtags.c	832;"	f	typeref:typename:tagResult	file:
+growFields	ext/readtags.c	409;"	f	typeref:typename:tagResult	file:
+growString	ext/readtags.c	266;"	f	typeref:typename:tagResult	file:
+ignorecase	ext/readtags.c	84;"	m	struct:sTagFile::__anonb9bf78c10208	typeref:typename:short	file:
+initialize	ext/readtags.c	866;"	f	typeref:typename:tagFile *	file:
+initialized	ext/readtags.c	54;"	m	struct:sTagFile	typeref:typename:unsigned char	file:
+inputUCtagsMode	ext/readtags.c	60;"	m	struct:sTagFile	typeref:typename:unsigned char	file:
+isOdd	ext/readtags.c	519;"	f	typeref:typename:int	file:
+isPseudoTagLine	ext/readtags.c	697;"	f	typeref:typename:int	file:
+key	ext/readtags.h	114;"	m	struct:__anonb9bf78c60808	typeref:typename:const char *
+kind	ext/readtags.h	143;"	m	struct:__anonb9bf78c60908	typeref:typename:const char *
+line	ext/readtags.c	70;"	m	struct:sTagFile	typeref:typename:vstring	file:
+lineNumber	ext/readtags.h	139;"	m	struct:__anonb9bf78c60908::__anonb9bf78c60a08	typeref:typename:unsigned long
+list	ext/readtags.c	91;"	m	struct:sTagFile::__anonb9bf78c10308	typeref:typename:tagExtensionField *	file:
+list	ext/readtags.h	154;"	m	struct:__anonb9bf78c60908::__anonb9bf78c60b08	typeref:typename:tagExtensionField *
+max	ext/readtags.c	89;"	m	struct:sTagFile::__anonb9bf78c10308	typeref:typename:unsigned short	file:
+name	ext/readtags.c	72;"	m	struct:sTagFile	typeref:typename:vstring	file:
+name	ext/readtags.c	78;"	m	struct:sTagFile::__anonb9bf78c10208	typeref:typename:char *	file:
+name	ext/readtags.c	98;"	m	struct:sTagFile::__anonb9bf78c10408	typeref:typename:char *	file:
+name	ext/readtags.h	125;"	m	struct:__anonb9bf78c60908	typeref:typename:const char *
+name	ext/readtags.h	97;"	m	struct:__anonb9bf78c60408::__anonb9bf78c60708	typeref:typename:const char *
+nameAcceptable	ext/readtags.c	1164;"	f	typeref:typename:int	file:
+nameComparison	ext/readtags.c	1030;"	f	typeref:typename:int	file:
+nameLength	ext/readtags.c	80;"	m	struct:sTagFile::__anonb9bf78c10208	typeref:typename:size_t	file:
+opened	ext/readtags.h	74;"	m	struct:__anonb9bf78c60408::__anonb9bf78c60508	typeref:typename:int
+parseExtensionFields	ext/readtags.c	426;"	f	typeref:typename:tagResult	file:
+parseTagLine	ext/readtags.c	569;"	f	typeref:typename:tagResult	file:
+partial	ext/readtags.c	82;"	m	struct:sTagFile::__anonb9bf78c10208	typeref:typename:short	file:
+pattern	ext/readtags.h	135;"	m	struct:__anonb9bf78c60908::__anonb9bf78c60a08	typeref:typename:const char *
+pos	ext/readtags.c	66;"	m	struct:sTagFile	typeref:typename:rt_off_t	file:
+pos	ext/readtags.c	76;"	m	struct:sTagFile::__anonb9bf78c10208	typeref:typename:rt_off_t	file:
+program	ext/readtags.c	103;"	m	struct:sTagFile	typeref:struct:sTagFile::__anonb9bf78c10408	file:
+program	ext/readtags.h	104;"	m	struct:__anonb9bf78c60408	typeref:struct:__anonb9bf78c60408::__anonb9bf78c60708
+readFieldValue	ext/readtags.c	996;"	f	typeref:typename:const char *	file:
+readNext	ext/readtags.c	973;"	f	typeref:typename:tagResult	file:
+readPseudoTags	ext/readtags.c	702;"	f	typeref:typename:tagResult	file:
+readTagCharacter	ext/readtags.c	164;"	f	typeref:typename:READTAGS_INLINE int
+readTagLine	ext/readtags.c	399;"	f	typeref:typename:int	file:
+readTagLineRaw	ext/readtags.c	323;"	f	typeref:typename:int	file:
+readTagLineSeek	ext/readtags.c	1011;"	f	typeref:typename:int	file:
+readtags_fseek	ext/readtags.c	133;"	f	typeref:typename:int	file:
+readtags_ftell	ext/readtags.c	120;"	f	typeref:typename:rt_off_t	file:
+rt_off_t	ext/readtags.c	46;"	t	typeref:typename:long long	file:
+rt_off_t	ext/readtags.c	48;"	t	typeref:typename:off_t	file:
+sTagFile	ext/readtags.c	52;"	s	file:
+search	ext/readtags.c	85;"	m	struct:sTagFile	typeref:struct:sTagFile::__anonb9bf78c10208	file:
+size	ext/readtags.c	40;"	m	struct:__anonb9bf78c10108	typeref:typename:size_t	file:
+size	ext/readtags.c	68;"	m	struct:sTagFile	typeref:typename:rt_off_t	file:
+sort	ext/readtags.h	87;"	m	struct:__anonb9bf78c60408::__anonb9bf78c60608	typeref:typename:tagSortType
+sortMethod	ext/readtags.c	62;"	m	struct:sTagFile	typeref:typename:tagSortType	file:
+sortType	ext/readtags.h	39;"	d
+status	ext/readtags.h	79;"	m	struct:__anonb9bf78c60408	typeref:struct:__anonb9bf78c60408::__anonb9bf78c60508
+tagEntry	ext/readtags.h	157;"	t	typeref:struct:__anonb9bf78c60908
+tagErrno	ext/readtags.h	63;"	t	typeref:enum:__anonb9bf78c60303
+tagExtensionField	ext/readtags.h	119;"	t	typeref:struct:__anonb9bf78c60808
+tagFile	ext/readtags.h	67;"	t	typeref:struct:sTagFile
+tagFileInfo	ext/readtags.h	106;"	t	typeref:struct:__anonb9bf78c60408
+tagResult	ext/readtags.h	53;"	t	typeref:enum:__anonb9bf78c60203
+tagSortType	ext/readtags.h	33;"	t	typeref:enum:__anonb9bf78c60103
+tagcmp	ext/readtags.c	238;"	f	typeref:typename:int	file:
+tagncmp	ext/readtags.c	252;"	f	typeref:typename:int	file:
+tagnuppercmp	ext/readtags.c	224;"	f	typeref:typename:int	file:
+tagsClose	ext/readtags.c	1430;"	f	typeref:typename:tagResult
+tagsField	ext/readtags.c	1350;"	f	typeref:typename:const char *
+tagsFind	ext/readtags.c	1358;"	f	typeref:typename:tagResult
+tagsFindNext	ext/readtags.c	1373;"	f	typeref:typename:tagResult
+tagsFindPseudoTag	ext/readtags.c	1397;"	f	typeref:typename:tagResult
+tagsFirst	ext/readtags.c	1320;"	f	typeref:typename:tagResult
+tagsFirstPseudoTag	ext/readtags.c	1387;"	f	typeref:typename:tagResult
+tagsGetErrno	ext/readtags.c	1441;"	f	typeref:typename:int
+tagsNext	ext/readtags.c	1336;"	f	typeref:typename:tagResult
+tagsNextPseudoTag	ext/readtags.c	1392;"	f	typeref:typename:tagResult
+tagsOpen	ext/readtags.c	1290;"	f	typeref:typename:tagFile *
+tagsSetSortType	ext/readtags.c	1296;"	f	typeref:typename:tagResult
+taguppercmp	ext/readtags.c	210;"	f	typeref:typename:int	file:
+terminate	ext/readtags.c	949;"	f	typeref:typename:void	file:
+unescapeInPlace	ext/readtags.c	544;"	f	typeref:typename:char *	file:
+url	ext/readtags.c	100;"	m	struct:sTagFile::__anonb9bf78c10408	typeref:typename:char *	file:
+url	ext/readtags.h	100;"	m	struct:__anonb9bf78c60408::__anonb9bf78c60708	typeref:typename:const char *
+value	ext/readtags.h	117;"	m	struct:__anonb9bf78c60808	typeref:typename:const char *
+version	ext/readtags.c	102;"	m	struct:sTagFile::__anonb9bf78c10408	typeref:typename:char *	file:
+version	ext/readtags.h	103;"	m	struct:__anonb9bf78c60408::__anonb9bf78c60708	typeref:typename:const char *
+vstring	ext/readtags.c	42;"	t	typeref:struct:__anonb9bf78c10108	file:
+xdigitValue	ext/readtags.c	147;"	f	typeref:typename:int	file:
