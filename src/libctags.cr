@@ -1,5 +1,5 @@
 @[Link(ldflags: "-L#{__DIR__}/../ext/")]
-@[Link(ldflags: "#{__DIR__}/../ext/libctags.a")]
+@[Link(ldflags: "#{__DIR__}/../ext/libreadtags.a")]
 
 lib LibCtags
   # Enums
