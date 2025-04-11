@@ -15,6 +15,6 @@ options = Docopt.docopt(HELP, ARGV)
 
 # Handle version manually
 if options["--version"]
-  puts "tartrazine #{Ctags::VERSION}"
+  puts "readtags #{Ctags::VERSION}"
   exit 0
 end
