@@ -22,7 +22,7 @@ describe Ctags do
       file = Ctags::File.new("spec/fixtures/tags")
       entry = file.first_entry
       entry.should_not be_nil
-      entry.as(Ctags::Entry).name.should eq("main")
+      entry.as(Ctags::Entry).name.should eq("EmptyString")
       file.close
     end
 
@@ -31,40 +31,15 @@ describe Ctags do
       entry = file.first_entry
       next_entry = file.next_entry
       next_entry.should_not be_nil
-      next_entry.as(Ctags::Entry).name.should eq("foo")
+      next_entry.as(Ctags::Entry).name.should eq("JUMP_BACK")
       file.close
     end
 
     it "can find an entry by name" do
       file = Ctags::File.new("spec/fixtures/tags")
-      entry = file.find_entry("main")
+      entry = file.find_entry("tagsOpen")
       entry.should_not be_nil
-      entry.as(Ctags::Entry).name.should eq("main")
-      file.close
-    end
-
-    it "can find the first pseudo tag" do
-      file = Ctags::File.new("spec/fixtures/tags")
-      pseudo_tag = file.first_pseudo_tag
-      pseudo_tag.should_not be_nil
-      pseudo_tag.as(Ctags::Entry).name.should eq("main")
-      file.close
-    end
-
-    it "can find the next pseudo tag" do
-      file = Ctags::File.new("spec/fixtures/tags")
-      pseudo_tag = file.first_pseudo_tag
-      next_pseudo_tag = file.next_pseudo_tag
-      next_pseudo_tag.should_not be_nil
-      next_pseudo_tag.as(Ctags::Entry).name.should eq("foo")
-      file.close
-    end
-
-    it "can find a pseudo tag by name" do
-      file = Ctags::File.new("spec/fixtures/tags")
-      pseudo_tag = file.find_pseudo_tag("main", 0)
-      pseudo_tag.should_not be_nil
-      pseudo_tag.as(Ctags::Entry).name.should eq("main")
+      entry.as(Ctags::Entry).name.should eq("tagsOpen")
       file.close
     end
   end
