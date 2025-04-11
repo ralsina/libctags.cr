@@ -28,7 +28,7 @@ describe Ctags do
 
     it "can find the next entry" do
       file = Ctags::File.new("spec/fixtures/tags")
-      entry = file.first_entry
+      file.first_entry
       next_entry = file.next_entry
       next_entry.should_not be_nil
       next_entry.as(Ctags::Entry).name.should eq("JUMP_BACK")
@@ -43,5 +43,4 @@ describe Ctags do
       file.close
     end
   end
-
 end
