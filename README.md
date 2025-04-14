@@ -15,7 +15,7 @@ It includes a very basic "readtags" program as an example of how to use it.
 ```yaml
 dependencies:
   cr-discount:
-    github: ralsina/cr-discount
+    github: ralsina/libctags.cr
 ```
 
 2. Run `shards install`
