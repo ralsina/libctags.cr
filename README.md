@@ -1,4 +1,4 @@
-# libctags
+# libctags.cr
 
 This is a partial wrapper of [universal-ctags](https://docs.ctags.io/) code to 
 *read* ctags files. It is not a complete wrapper, and it is not intended to be. 
@@ -14,7 +14,7 @@ It includes a very basic "readtags" program as an example of how to use it.
 
 ```yaml
 dependencies:
-  cr-discount:
+  libctags:
     github: ralsina/libctags.cr
 ```
 
@@ -23,7 +23,7 @@ dependencies:
 
 ## Contributing
 
-1. Fork it (<https://github.com/ralsina/libctags/fork>)
+1. Fork it (<https://github.com/ralsina/libctags.cr/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
