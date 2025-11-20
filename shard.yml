@@ -10,7 +10,7 @@ targets:
 
 dependencies:
   docopt:
-    github: chenkovsky/docopt.cr
+    github: ralsina/docopt.cr
 
 scripts:
     postinstall: cd ext && make
