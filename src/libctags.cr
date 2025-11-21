@@ -186,11 +186,46 @@ module Ctags
     end
 
     def kind : String
-      String.new(@entry.kind)
+      kind_ptr = @entry.kind
+      return "" if kind_ptr.null?
+      String.new(kind_ptr)
     end
 
     def line_number : UInt64
-      @entry.address.line_number
+      # First try the native line number
+      native_line = @entry.address.line_number
+      return native_line if native_line > 0
+
+      # If native line number is 0, try to parse from raw fields
+      if line_str = get_field_from_raw("line")
+        if line_match = line_str.match(/(\d+)/)
+          return line_match[1].to_u64
+        end
+      end
+
+      # If still no line number, try to extract from the pattern
+      if pattern = self.pattern
+        # Look for line number in extended format patterns
+        # Pattern might be: "/^  class Section$/;\"\tline:189"
+        if line_match = pattern.match(/line:(\d+)/)
+          return line_match[1].to_u64
+        end
+      end
+
+      0_u64
+    end
+
+    # Helper to get a field from raw ctags entry without circular dependencies
+    private def get_field_from_raw(key : String) : String?
+      count = @entry.fields.count
+      list = @entry.fields.list
+      count.times do |i|
+        field_key = String.new(list[i].key)
+        if field_key == key
+          return String.new(list[i].value)
+        end
+      end
+      nil
     end
 
     def pattern : String?
